@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex bg-black items-center justify-center">
+
+    <div class="flex flex-col items-center justify-center mt-36 gap-2">
+
+        <p class="text-[25px] text-amber-600 font-bold">Add Your To Do</p>
+
+        <div class="flex flex-row bg-slate-200 w-[300px] h-[35px] rounded-md">
+            <input data-input type="text" placeholder="write task here"
+                class="ml-2 text-[15px] italic w-[70%] h-[30px] pt-1 items-center border-none bg-slate-200 outline-none">
+            <i data-add onclick="add()" class="fa-solid fa-circle-plus w-[25px] h-[25px] pt-3 ml-[20%] cursor-pointer" style="color: #09251f;"></i>
+        </div>
+
+        <div data-taskcontainer class="scale-1 flex flex-col w-[300px] h-[full] rounded-md">
+            <ul data-list class="relative gap-[3px] rounded-md cursor-cell flex flex-col w-[300px] h-[full]">
+                <!--<li class="pl-2">task1</li>
+                <li class="pl-2">task2</li>
+                <li class="pl-2">task3</li>-->
+            </ul>
+        </div>
+        
+    </div>
+
+    <script src="https://kit.fontawesome.com/d10f14b30a.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
